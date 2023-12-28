@@ -325,7 +325,7 @@
 		background: #2056ac;
 	}
 
-	#header
+	header
 	{
 		text-align: center;
 	}
@@ -383,7 +383,7 @@
 		text-align: center;
 	}
 	
-	.dropdown-menu li
+	#menu li
 	{
 		display: inline-block;
 	}
@@ -399,11 +399,6 @@
 		line-height: 60px;
 		outline: 0;
 		color: #FFF;
-	}
-
-	.dropdown-menu-sub li
-	{
-		display: block;
 	}
 	
 	#menu li:hover a, #menu li.active a, #menu li.active span
@@ -515,7 +510,7 @@
 	}
 
 /*********************************************************************************/
-/* Sidebar   barre latérale                                                                    */
+/* Sidebar   barre latéral                                                                    */
 /*********************************************************************************/
 
 	#sidebar
@@ -606,6 +601,51 @@
 	{
 		width: 600px;
 		margin: 0px auto;
+	}
+
+/*********************************************************************************/
+/* Menu   (déroulant pour l'étape 3)                                                                       */
+/*********************************************************************************/
+
+	#menu
+	{
+		height: 60px;
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+		padding: 0em 2em;
+		text-align: center;
+	}
+	
+	#menu li
+	{
+		display: inline-block;
+	}
+	
+	#menu li a, #menu li span
+	{
+		display: inline-block;
+		padding: 0em 1.5em;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 600;
+		text-transform: uppercase;
+		line-height: 60px;
+		outline: 0;
+		color: #FFF;
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+		background: #FFF;
+		border-radius: 7px 7px 0px 0px;
+		color: #2056ac;
+	}
+	
+	#menu .current_page_item a
+	{
 	}
 	
 	
@@ -802,5 +842,69 @@ background:white;
 		text-align: center;
 		color: #FFFFFF;
 	}
-	
+
+/*********************************************************************************/
+/* FAQ                                                                    */
+/*********************************************************************************/
+	*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+}
+h1 {
+    text-align: center;
+    padding: 35px 0;
+    font-size: 40px;
+}
+.container-faq {
+    width: 70%;
+    max-width: 900px;
+    min-width: 700px;
+    height: auto;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.questions {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+.visible-pannel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+}
+.visible-pannel h2 {
+    margin-left: 10px;
+    padding: 15px 5px;
+    font-size: 25px;
+}
+.visible-pannel img {
+    margin-right: 10px;
+    width: 25px;
+    cursor: pointer;
+}
+.toggle-pannel {
+    padding: 0px 15px;
+    height: 0px;
+    opacity: 0;
+}
+.toggle-pannel h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.toggle-pannel p {
+    line-height: 1.5;
+}
 	
